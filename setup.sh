@@ -1,8 +1,11 @@
 #!/bin/bash
+
+apt install nano
+
 #create the users
-adduser --gecos "" --disabled-password $sshuser
-adduser --gecos "" --disabled-password $anotheruser
-adduser --gecos "" --disabled-password $anotheranotheruser
+adduser --gecos "" --disabled-password sshuser
+adduser --gecos "" --disabled-password anotheruser
+adduser --gecos "" --disabled-password anotheranotheruser
 
 #set the passwords
 #they need to crack the first one
@@ -33,6 +36,7 @@ chmod 400 /home/sshuser/flag4.txt
 chmod 400 /home/sshuser/flag5.txt
 
 #start the cron service
+apt install cron
 service cron start
 crontab -u anotheruser ./newcron
 #don't forget to delete the current directory when done
