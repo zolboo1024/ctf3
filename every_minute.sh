@@ -1,4 +1,4 @@
 #!/bin/bash
-/home/pleb/christmas_crone.sh
-/bin/date +%s > /home/pleb/current_time.txt
-chmod a+w /home/pleb/current_time.txt
+/home/anotheruser/christmas_witch.sh
+/bin/date +%s > /home/anotheruser/current_time.txt
+chmod a+w /home/anotheruser/current_time.txt
