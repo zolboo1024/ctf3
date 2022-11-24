@@ -1,7 +1,5 @@
 #!/bin/bash
 
-apt install nano
-
 #create the users
 adduser --gecos "" --disabled-password sshuser
 adduser --gecos "" --disabled-password anotheruser
